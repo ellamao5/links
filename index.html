@@ -7,16 +7,16 @@
       padding-bottom: 40px;
     }
     .banner-image {
-      width: 128px;
-      height: 128px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
-      border-radius: 128px;
+      border-radius: 150px;
     }
 
     .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
       object-fit: cover;
     }
   </style>
@@ -27,21 +27,50 @@
     }
 
     .name {
-      color: #078080;
+      color: #0e172c;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
     }
 
     .social-media {
       background-color: #e3f6f5;
+      display: flex;
+      align-items: center;
     }
 
     .social-media a {
-      color: #0e172c;
+      color: #078080;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
   </style>
+
+ <style>
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 640px;
+    flex-grow: 1;
+  }
+</style>
+
   </head>
 
 <body>
+ <div class="items">
   <div class="banner">
     <img src="/thumbnails/profile-pic.jpg" alt="Ella Mao headshot" class="banner-image">
   </div>
@@ -77,6 +106,7 @@
       GitHub
     </a>
   </div>
+</div>
 
 
 
